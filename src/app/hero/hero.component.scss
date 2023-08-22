@@ -1,0 +1,46 @@
+.container {
+    margin-top: 150px;
+
+}
+.search-submit {
+    width: 160px;
+    padding: 12px 10px;
+}
+
+.fields {
+    width: calc(100% - 80px);
+    position: relative;
+    .one-third {
+        width: 50%;
+        
+        
+       
+        label{
+            font-weight: 700;
+           
+        }
+    }
+}
+
+.form-control {
+    box-shadow: none!important;
+    border: transparent;
+    
+    
+    border: 2px solid rgba(0,0,0,.1);
+    font-size: 14px;
+    width: 100%;
+    height: 70px !important;
+    bordeR: 1px solid transparent;
+    padding: 10px 30px;
+   
+}
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 14px;
+    transform: translateY(-50%);
+    
+   
+}

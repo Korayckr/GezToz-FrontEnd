@@ -1,0 +1,80 @@
+<div class="container mt-5 mb-5">
+  <div class="card" >
+    <div class="row g-0" *ngIf="house">
+      <div class="col-md-6 border-end">
+        <div class="d-flex flex-column justify-content-center" >
+          <div class="main_image">
+            <img src="{{house.houseImg}}" id="main_product_image" width="500">
+          </div>
+          <div class="thumbnail_images">
+            <ul id="thumbnail">
+              
+            </ul>
+          </div>
+          <div id="houseProporties" class="d-md-flex mt-7">
+            <ul>
+              <p>Bu mekân size neler sunuyor?</p>
+              <li>Okyanus manzarası</li>
+              <li>Yüzme havuzu - sonsuzluk</li>
+              <li>Wifi</li>
+              <li>TV</li>
+              <li>Klima</li>
+            </ul>
+            <ul class="ml-md-6">
+              <p></p>
+              <br>
+              <li><span class="icon icon-map-marker"></span> Mekânda güvenlik kameraları</li>
+              <li>Konaklama sırasında temizlik yapılabilir</li>
+              <li>Mutfak</li>
+              <li>Binanın önünde ücretsiz açık park yeri</li>
+              <li>Klima</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-3 right-side">
+          <div class="mt-5">
+            <h2 class="mb-3">{{house.houseName}}</h2>
+            <!-- Span to fetch price from the database -->
+            <h3><span id="pricePlaceholder"></span></h3>
+            <p class="rate mb-5">
+              <span class="loc"><i class="icon-map"></i>Adres : {{house.houseAddres}},{{house.city}},{{house.country}} </span>
+              
+
+
+              <span class="star">
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star-o"></i>
+                <!-- <a href="">{{house.popularity}}</a> -->
+              </span>
+            </p>
+            <span class="loc"><i class="icon-map"></i>Fiyat : {{house.housePrice}}</span>
+            <p class="description">{{house.houseDescription}} </p>
+            <div class="d-md-flex mt-3">
+              <ul class="roomSection">
+                <p>YATAK ODASI & BANYO</p>
+                <li>Oda 1: {{house.roomCount}}</li>
+                <li>Oda 2: {{house.roomCount}}</li>
+          
+              </ul>
+              <ul class="ml-md-5">
+                <p>PERSONEL & HİZMETLER</p>
+                <li>1: Nevresim takımları değişimi - haftada iki kez</li>
+                <li>2: Ekstra Maliyet (önceden bildirim gerekli olabilir)</li>
+                <li>3: Aktiviteler ve geziler</li>
+              </ul>
+            </div>
+          </div>
+          <div class="search-option">
+            <i class='bx bx-search-alt-2 first-search'></i>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

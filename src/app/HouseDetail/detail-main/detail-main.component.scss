@@ -1,0 +1,105 @@
+body {
+    background-color: #ecedee;
+  }
+  
+  .card {
+  
+    border: none;
+    overflow: hidden;
+    margin-top: 10vh;
+    ;
+  }
+  
+  .thumbnail_images ul {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+  }
+  
+  .thumbnail_images ul li {
+    margin: 2vh;
+    padding: 2vh;
+    border: 0, 5vh solid #eee;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  .thumbnail_images ul li:hover {
+    border: 1vh solid #ffffff;
+  }
+  
+  .main_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vh;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .description {
+  
+  
+  
+    font-size: 18px;
+    border: 1vh solid rgb(0, 174, 180);
+    padding: 2rem 1rem;
+    min-height: 3em;
+    width: 100%;
+    resize: both;
+    
+    border-left: 0px solid #ccc;
+    padding-left: 10px;
+    border-right: 0px solid #ccc;
+    padding-right:10px;
+  }
+  
+  .roomSection {
+  
+  
+    font-size: 18px;
+    border: 1vh solid rgb(0, 174, 180);
+    padding: 2rem 1rem;
+    min-height: 3em;
+    width: 100%;
+    resize: both;
+    
+    border-left: 0px solid #ccc;
+    padding-left: 10px;
+    border-right: 0px solid #ccc;
+    padding-right:10px;
+  }
+  
+  .ml-md-5 {
+  
+    font-size: 18px;
+    border: 1vh solid rgb(0, 174, 180);
+    padding: 2rem 1rem;
+    min-height: 3em;
+    width: 100%;
+    resize: both;
+    
+    border-left: 0px solid #ccc;
+    padding-left: 10px;
+    border-right: 0px solid #ccc;
+    padding-right:10px;
+  }
+  
+  #houseProporties {
+    font-size: 18px;
+    border: 1vh solid rgb(0, 174, 180);
+    padding: 2rem 1rem;
+    min-height: 3em;
+    width: 100%;
+    resize: both;
+    
+    border-left: 0px solid #ccc;
+    padding-left: 10px;
+    border-right: 0px solid #ccc;
+    padding-right:10px;
+    
+  }
+  
+  

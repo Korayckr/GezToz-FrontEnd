@@ -1,0 +1,46 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid"> <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button"
+      data-toggle="collapse" data-target="#navbar20">
+
+    </button>
+    <div class="collapse navbar-collapse" id="navbar20">
+      <li id="homeLink" class="navbar-brand text-white mb-0">
+        <a class="nav-link" href="/home">
+          <i class="fa fa-anchor" style="font-size:24px"></i> GEZ & TOZ
+        </a>
+      </li>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" style="font-size: 135%;"> <a class="nav-link" href="/Kirala">Ev Kiralama</a> </li>
+        <li class="nav-item" style="font-size: 135%;"> <a class="nav-link" href="/About">Hakkımızda</a> </li>
+        <li class="nav-item" style="font-size: 135%;"> <a class="nav-link" href="/Iletisim">İletişim</a> </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-1">
+          <a class="nav-link" href="/login">
+            <i *ngIf="!isLoggedIn" class="fa fa-user" style="font-size:7vh; color: rgb(11, 160, 210);">
+            </i>
+
+          </a>
+        </li>
+
+        <div *ngIf="isLoggedIn" class="container-background row">
+          <div class="nav-item dropdown">
+            <a class="nav-item nav-link dropdown-toggle user-action">
+              <img id="homeAvatar" src="assets/images/profil.jpg" class="avatar" alt="Avatar"
+                style="width: 4vh; height: 4vh;">
+              <strong style="color: rgb(0, 0, 0); font-size: 2vh;">{{currentUser?.fullName}}</strong>
+              <button id="dropdownBtn" pButton type="button" (click)="menu.toggle($event)" icon="pi pi-angle-down"></button>
+            </a>
+            <p-menu #menu [model]="items" [popup]="true" [appendTo]="'body'" class="dropdown-menu"></p-menu>
+
+          </div>
+        </div>
+
+
+
+      </ul>
+    </div>
+  </div>
+</nav>

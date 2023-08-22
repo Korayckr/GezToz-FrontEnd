@@ -1,0 +1,34 @@
+<br>
+<br>
+
+    
+<section class="home-testimonial">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center testimonial-pos">
+            <div class="col-md-12 pt-4 d-flex justify-content-center">
+                <h3 style="font-size: xx-large;">Comment</h3>
+            </div>
+        </div>
+        <section class="home-testimonial-bottom">
+            <div class="container testimonial-inner">
+                <div class="row d-flex justify-content-center" >
+                    <div class="col-md-4 style-3"*ngFor="let comment of comments.slice(0, 4)">
+                        <div class="tour-item ">
+                            <div class="tour-desc bg-white">
+                                <div class="tour-text color-grey-3 text-center">&ldquo; {{comment.commentHeader}} &rdquo;</div>
+                                <br>
+                                <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="assets/images/profil.jpg" alt=""></div>
+                                <div class="link-name d-flex justify-content-center">Popularity : {{comment.starRating}}</div>
+                                <div class="link-position d-flex justify-content-center">{{comment.commentText}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>

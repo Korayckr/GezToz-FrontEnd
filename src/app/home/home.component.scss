@@ -1,0 +1,24 @@
+.background-container {
+  background-image: url('/assets/images/wallpaper3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.background-container::after {
+  margin-top: 100vh;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background: linear-gradient(226deg, rgba(0, 82, 114, 0.6) 0%, rgba(0, 82, 114, 0.4) 35%, rgba(0, 82, 114,0.2) 42%, rgba(0, 82, 114,0) 60%);
+  z-index: -1;
+}
+

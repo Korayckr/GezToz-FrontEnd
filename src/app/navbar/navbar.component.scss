@@ -1,0 +1,50 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    height: 100px;
+}
+
+
+#navbar20   {
+    margin-left: 5vh;
+}
+
+#homeLink {
+    margin-right: 10vh;
+}
+
+
+
+  .container-background {
+    margin-top: 1vh;
+    background-color: rgba(219, 232, 236, 0.4); /* Renkli ve saydam arka plan */
+    padding: 1vh; /* Opsiyonel: İçeriği çevreleyen boşluklar ekleyebilirsiniz */
+    border-radius: 2vh; /* Köşeleri oval yapar (buradaki değeri değiştirerek köşe yuvarlama miktarını ayarlayabilirsiniz) */
+  }
+  
+
+  button {
+    margin-top: 1vh;
+    background-color:rgba(121, 131, 134, 0.611);
+    color: white;
+    border: none;
+    
+    border-radius: 1vh;
+    cursor: pointer;
+    font-size: 1vh;
+    
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+
+
+
+ #homeAvatar {
+  margin-right: 1vh;
+ }
+
+ #dropdownBtn {
+  margin-left: 2vh;
+ }
+ 
